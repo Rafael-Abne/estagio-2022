@@ -12,6 +12,7 @@
 
 - Conclua o crud do dashboard-prominasunica da tabela leads(adicionar, editar e atualizar leads), as telas já estão prontas, basta concluir o back-end
 
+<br><br>
 ### :desktop_computer:  3 DESAFIO - LARAVEL - MATRÍCULA
 
 - No projeto 'matricula-laravel': conclua o formulário de matrícula que está faltando, página de matrícula localizada em views/matricula
@@ -25,7 +26,7 @@
 - login dashboard padrão: user@gmail.com, senha: 123456 - editável em database/factories/UserFactory.php
 - php artisan migrate --seed para gerar as tabelas do banco de dados
 - iniciar servidor: php artisan serve
-
+<br><br>
 ## DESAFIO FRONT-END
 
 ### :desktop_computer:  4 DESAFIO - CRIAÇÃO DE UMA PÁGINA
