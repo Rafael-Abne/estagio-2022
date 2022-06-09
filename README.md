@@ -16,7 +16,7 @@
 ### :desktop_computer:  3 DESAFIO - LARAVEL - MATRÍCULA
 
 - No projeto 'matricula-laravel': conclua o formulário de matrícula que está faltando, página de matrícula localizada em views/matricula
-- Crie a tabela de matrícula no banco de dados: campos (nome, telefone, cpf, curso, estado, cidade)
+- Crie a tabela de matrícula no banco de dados: campos (nome, email, telefone, cpf, curso, estado, cidade)
 - Faça a listagem das matrículas no dashboard
 ## CONFIGURAÇÃO - LARAVEL
 - composer install
