@@ -36,8 +36,8 @@
 
                 <tr>
                     <td>122</td>
-                    <td>Maria Fransica</td>
-                    <td>8888888888</td>
+                    <td>Maria Francisca</td>
+                    <td>(88) 9999-99999</td>
 
                     <td>
                     {{-- <form method="POST" action="">
