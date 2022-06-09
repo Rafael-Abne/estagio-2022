@@ -1,0 +1,57 @@
+.login-content{
+    margin: 50px auto 0 auto;
+    width: 400px;
+    height: auto;
+    border: 2px solid #c1c1c1;
+    border-radius: 4px;
+    animation-name: login-content;
+    animation-duration: 2s;
+}
+
+.login-content .logo {
+    padding: 40px 30% 0 30%;
+    animation-name: logo;
+    animation-duration: 2s;
+}
+
+.form-autentica{
+    width: 70%;
+    margin: 10% 15%;
+    height: auto;
+}
+
+.btn-prominas{
+    width: 100%;
+    background: rgba(40, 167, 69, 0.8);
+    color: #fff;
+}
+
+.btn-prominas:hover, .btn-prominas:focus, .btn-prominas:active{
+    background: rgba(40, 167, 69, 1);
+    color: #fff;
+}
+
+@keyframes login-content {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes logo {
+    from {
+        margin-top: -100px;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+.login-content img {
+    width: 100%;
+}

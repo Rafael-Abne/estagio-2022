@@ -1,0 +1,443 @@
+:root {
+    --orange-secondary: #ff5600;
+    --orange-primary: #FF6600;
+    --gray: #4D4D4D;
+}
+
+#msform {
+    margin-top: 50px;
+}
+
+.pre-matricula {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#msform .logo {
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left;
+    font-weight: 600;
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#progressbar .active {
+    color: #000
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 45%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f13e"
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f07a"
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar #course:before {
+    font-family: FontAwesome;
+    content: "\f02e";
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #6cb65d
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #673AB7
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+[class*='error'] {
+    margin: -20px 0px 20px;
+    color: red;
+}
+
+#cookieAcceptBar.cookieAcceptBar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgb(245, 242, 242);
+    color: rgb(51, 49, 49);
+    padding: 20px 0;
+    z-index: 99999;
+    text-align: justify;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+#cookieAcceptBar.cookieAcceptBar a {
+    text-decoration: underline;
+}
+
+#cookieAcceptBar button {
+    cursor: pointer;
+    border: none;
+    background-color: rgb(80 121 89);
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 3px;
+}
+
+#cookieAcceptBar #cookieAcceptBarRecuse {
+    background-color: #f4ac6d;
+}
+
+.form-submit {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.form-submit input[type="submit"],
+.form-submit a {
+    outline: none;
+    background-color: var(--color-bolsasead);
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    width: 40%;
+    margin-top: 20px;
+}
+
+.form-submit a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.form-pre-matricula {
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-pre-matricula .revisao {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-pre-matricula .revisao .bolsa {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.form-pre-matricula .revisao .bolsa .inst {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+}
+
+.form-pre-matricula .revisao .bolsa .inst img {
+    width: 250px;
+}
+
+.form-pre-matricula .revisao .bolsa .inst .course {
+    text-align: center;
+}
+
+.form-pre-matricula .revisao .bolsa .inst .course h4 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.form-pre-matricula .revisao .bolsa .inst .description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.form-pre-matricula .revisao .bolsa .inst .description .item p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.form-pre-matricula .revisao .bolsa .inst .description .item span {
+    font-weight: 600;
+}
+
+.form-pre-matricula .revisao .bolsa .inst .description .item {
+    margin-top: 10px;
+}
+
+.form-pre-matricula .revisao .bolsa .payment {
+    width: 40%;
+}
+
+.form-pre-matricula .revisao .bolsa .payment .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.form-pre-matricula .revisao .bolsa .payment .price .item p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .form-pre-matricula .revisao .bolsa {
+        flex-direction: column;
+    }
+    .form-pre-matricula .revisao .bolsa .payment {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .form-pre-matricula .revisao .bolsa .inst {
+        align-items: center;
+    }
+    .form-submit input[type="submit"] {
+        width: 100%;
+    }
+    .form-pre-matricula .revisao .bolsa .payment .price .item {
+        margin-top: 10px;
+    }
+    .form-pre-matricula {
+        padding: 10px;
+    }
+    .form-pre-matricula .revisao .bolsa .inst {
+        width: 100%;
+    }
+}
+
+
+/*
+
+tabs
+
+*/
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tab {
+    width: 100%;
+}
+
+.tab-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-item {
+    height: 44px;
+    width: 100%;
+}
+
+.tab-btn {
+    align-items: center;
+    background: #fff;
+    border-radius: 2px 2px 0 0;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    border: 0.1px solid #ccc;
+}
+
+.tab-panel {
+    background: #fff;
+    border-radius: 0 0 2px 2px;
+    color: #333;
+    display: none;
+}
+
+.tab-btn.is-selected {
+    background: var(--color-bolsasead);
+    color: #fff;
+    pointer-events: none;
+}
+
+.tab-panel.is-selected {
+    display: block;
+}
+
+.pix {
+    width: 20px;
+    margin: 5px;
+    color: #fff;
+}
+
+.metodos_pagamento {
+    margin-bottom: 100px;
+}
+
+.metodos_pagamento ul li i {
+    padding: 5px;
+}
+
+.oferta {
+    border: 2px solid rgb(225, 221, 221);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.oferta p {
+    font-weight: 500;
+    text-align: center;
+    margin: 0px;
+}
+
+.button-payment {
+    outline: none;
+    background-color: var(--color-primary);
+    padding: 10px 15px;
+    border: none;
+    color: #fff !important;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.metodos_pagamento #tab-panel-pix p,
+.metodos_pagamento #tab-panel-boleto p {
+    margin-top: 20px;
+}
+
+.label-contrato{
+    font-size: 13px;
+}
+
+.clipboard {
+    cursor: pointer;
+    background-color: var(--color-bolsasead);
+    padding: 10px 5px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.clipboard img {
+    width: 20px;
+}
+
+.payment_pix .img-pix{
+    width: 250px;
+}
+
+.payment_card{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.card-interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

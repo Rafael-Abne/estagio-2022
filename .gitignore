@@ -1,0 +1,17 @@
+/node_modules
+/matricula-laravel/public/hot
+/public/storage
+/matricula-laravel/storage/*.key
+/matricula-laravel/vendor
+/matricula-laravel/packages
+.history/
+.phpintel/
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+*.orig
+.vscode/
+

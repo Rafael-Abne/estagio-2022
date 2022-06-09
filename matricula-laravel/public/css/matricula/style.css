@@ -1,0 +1,1082 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-secondary: #175326;
+    --color-primary: #249653;
+    --color-bolsasead: rgb(196, 148, 29);
+    --gray: #4D4D4D;
+    --dark: #1A1A1A;
+}
+
+body {
+    background: #fff;
+}
+
+.color-bolsas {
+    color: var(--color-bolsasead);
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+.color-gray {
+    color: var(--gray);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.text-bold {
+    font-weight: 800;
+}
+
+.container-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*
+menu
+
+*/
+
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #fff;
+    height: 110px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+#cabecalho-logo-img2,
+#cabecalho-menu-burguer {
+    display: none;
+}
+
+#cabecalho-menu {
+    display: block;
+}
+
+#cabecalho-logo img {
+    max-width: 80px;
+    margin-left: 120px;
+}
+
+#cabecalho-menu-lista {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#cabecalho-menu-lista li {
+    float: left;
+    font-size: 17px;
+    color: gray;
+    transition: 0.5s;
+}
+
+#cabecalho-menu-lista button {
+    margin-left: 50px;
+}
+
+#cabecalho-menu-lista li:hover {
+    border-bottom: white 1px solid;
+    transition: 0.5s;
+}
+
+#cabecalho-menu-lista li a {
+    color: rgba(58, 54, 54, 0.8);
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#cabecalho-menu-botao-botao {
+    height: 55px;
+    width: 240px;
+    border-radius: 50px;
+    background-color: #C83232;
+    border: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#cabecalho-menu-botao-botao:hover {
+    height: 55px;
+    width: 240px;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#menu-responsivel {
+    display: none;
+}
+
+@media screen and (max-width: 1199px) {
+    #cabecalho {
+        background-color: white;
+        height: 100px;
+    }
+    #cabecalho-logo-img2,
+    #cabecalho-menu-burguer {
+        display: block;
+    }
+    #cabecalho-menu-burguer {
+        cursor: pointer;
+    }
+    #cabecalho-logo-img,
+    #cabecalho-menu,
+    #cabecalho-menu-botao {
+        display: none;
+    }
+    #menu-responsivel {
+        right: 0;
+        z-index: 1;
+        width: 77vw;
+        height: 100vh;
+        background-color: #161616;
+        position: fixed;
+    }
+    #botao-menu-responsivel {
+        cursor: pointer;
+    }
+    #menu-responsivel ul {
+        list-style-type: none;
+        padding-left: 50px;
+        margin-top: 35vh;
+        font-size: 17px;
+        list-style-type: none;
+        padding-left: 60px;
+    }
+    #menu-responsivel ul li {
+        margin-bottom: 7vh;
+    }
+    #menu-responsivel a {
+        color: var(--color-primary);
+        text-decoration: none;
+    }
+    #menu-burguer-responsivel {
+        float: right;
+        padding: 20px 20px 20px 20px;
+        position: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #cabecalho-logo img {
+        display: block;
+    }
+    .container-page .fixed-mat {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        background-color: #161616;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .container-page .fixed-mat button {
+        padding: 12px;
+    }
+    .container-page .fixed-mat h3 {
+        font-size: 17px;
+        text-align: center;
+    }
+    #cabecalho-logo img {
+        margin: 0;
+    }
+}
+
+.container-page .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-page .header .logo img {
+    width: 300px;
+    padding: 20px;
+}
+
+.container-page .header .banners {
+    width: 100%;
+}
+
+.container-page .header .banners img {
+    width: 100%;
+}
+
+.container-page .content-lead {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    background-image: url(../../img/bolsas_ead/banner-site2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.container-page .content-lead .cta-lead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.container-page .cta-lead .bolsa-info {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.container-page .cta-lead .bolsa-info .bolsa_percent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-page .cta-lead .bolsa-info .bolsa_percent .bolsa span:nth-child(1) {
+    font-size: 50px;
+}
+
+.container-page .cta-lead .bolsa-info .bolsa_percent .percent {
+    height: 100%;
+}
+
+.container-page .cta-lead .bolsa-info .bolsa_percent .percent span {
+    font-size: 70px;
+    padding: 5px;
+    color: var(--color-bolsasead);
+}
+
+
+/*
+
+como funciona
+
+*/
+
+.container-page .como_funciona {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    width: 80%;
+}
+
+.container-page .como_funciona .title {
+    display: flex;
+    align-self: flex-start;
+}
+
+.container-page .como_funciona .title h2 {
+    font-size: 28px;
+}
+
+.container-page .como_funciona .passos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-page .como_funciona .passos .item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin: 20px;
+}
+
+.container-page .como_funciona .passos .item i {
+    font-size: 50px;
+    color: var(--color-bolsasead);
+    padding: 10px;
+}
+
+.container-page .como_funciona .passos .item .cta-lead .form-lead {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    width: 50%;
+}
+
+.waves {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #faf7f7;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.waves::after {
+    background-image: url(../../img/bolsas_ead/background.svg);
+    background-repeat: repeat-x;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 13px;
+    transform: rotate(180deg);
+}
+
+.container-page .faculdades {
+    display: flex;
+    margin: 50px 0px 50px 0px;
+    flex-direction: column;
+    width: 80%;
+}
+
+.container-page .faculdades .title {
+    display: flex;
+    align-self: flex-start;
+}
+
+.container-page .faculdades .title h2 {
+    font-size: 28px;
+}
+
+.container-page .faculdades .faculdades-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.container-page .faculdades .faculdades-list .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    width: 250px;
+    box-shadow: 1px 10px 26px rgba(0, 0, 0, .1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 10px 0px 0px;
+    background: #fff;
+}
+
+.container-page .faculdades .faculdades-list .item p {
+    font-size: 15px;
+}
+
+.container-page .faculdades .faculdades-list .item p~p>span {
+    font-size: 20px;
+}
+
+.container-page .faculdades .faculdades-list .item p>span {
+    font-size: 20px;
+}
+
+.container-page .faculdades .faculdades-list .item img {
+    width: 200px;
+}
+
+.container-page .faculdades .faculdades-list .item button {
+    outline: none;
+    background-color: var(--color-bolsasead);
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container-page .cursos {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-page .cursos .title {
+    display: flex;
+    align-self: flex-start;
+}
+
+.container-page .cursos .title h2 {
+    font-size: 28px;
+}
+
+.container-page .cursos .cursos-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.container-page .cursos .cursos-list .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    width: 250px;
+    box-shadow: 1px 10px 26px rgba(0, 0, 0, .1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 10px 0px 0px;
+    background: #fffcfc;
+}
+
+.container-page .cursos .cursos-list .item p>span {
+    font-size: 17px;
+}
+
+.container-page .cursos .cursos-list .item img {
+    width: 80px;
+}
+
+.container-page .cursos .cursos-list .item button {
+    outline: none;
+    background-color: var(--color-bolsasead);
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container-page .sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 80%;
+}
+
+.container-page .sobre .title {
+    margin-bottom: 20px;
+}
+
+.container-page .sobre .title h2 {
+    font-size: 30px;
+}
+
+.container-page .sobre .item p {
+    color: #776e6e;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.cta-lead .form-lead {
+    width: 55%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 10px;
+}
+
+.cta-lead .form-lead form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-lead .form-lead form input[type="text"],
+.cta-lead .form-lead form input[type="email"],
+.cta-lead .form-lead form input[type="number"] {
+    width: 100%;
+    margin: 0 15px;
+    height: 35px;
+    padding: 20px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    background: #fcfbfb;
+    color: #576366;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.cta-lead .form-lead form select {
+    width: 100%;
+    margin: 0 15px;
+    height: 40px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    background: #fcfbfb;
+    color: #576366;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.cta-lead .form-lead form .header-form {
+    text-align: center;
+}
+
+.cta-lead .form-lead form h2 {
+    font-size: 30px;
+}
+
+.cta-lead .form-lead form i {
+    margin: 30px;
+    color: var(--color-primary);
+}
+
+.button-orange {
+    outline: none;
+    background-color: var(--color-primary);
+    padding: 15px 25px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container-page .inst_about{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*
+
+apresentação da instituição
+
+*/
+
+.container-page .inst_about .banner_inst{
+    background: #ebeeec;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.container-page .inst_about .banner_inst .inst_info .bolsa span{
+    font-size: 30px;
+}
+
+.container-page .inst_about .banner_inst .inst_info .percent span{
+    font-size: 50px;
+}
+
+.container-page .inst_about .banner_inst .section-inst{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.container-page .inst_about .banner_inst .section-inst img{
+    width: 250px;
+}
+
+
+
+/*
+
+instituição cursos
+
+*/
+
+.container-page .search_inst_bolsas{
+    background: #ebeeec;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.container-page .search_inst_bolsas .inst_info .bolsa span{
+    font-size: 20px;
+}
+
+.container-page .search_inst_bolsas .inst_info .percent span{
+    font-size: 50px;
+}
+
+.container-page .search_inst_bolsas .section-inst{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-page .search_inst_bolsas .section-inst img{
+    width: 250px;
+}
+
+
+
+.container-page .inst_about .banner_inst .section-inst .cta{
+    margin-top: 20px;
+    width: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.container-page .inst_about .banner_inst .section-inst .cta form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-page .inst_about .banner_inst .section-inst .cta form input{
+    margin-top: 10px;
+}
+
+.container-page .inst_about .about_content{
+    padding: 20px;
+    max-width: 1166px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-page .inst_about .about_content .content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-page .inst_about .about_content .video_inst{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-page .inst_about .about_content .video_inst iframe{
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 400px;
+}
+
+
+.container-page .inst_about .about_content p{
+    margin-top: 20px;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.container-page .inst_about .about_content .site{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--color-bolsasead);
+    height: 100%;
+    width: 30%;
+}
+
+.container-page .inst_about .about_content .site .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-page .inst_about .about_content .site .item span{
+    margin:  10px;
+}
+
+.container-page .inst_about .about_content .site .item a{
+    color: var(--color-bolsasead);
+}
+
+.container-page .inst_about .about_content .site .item a,
+.container-page .inst_about .about_content .site .item span~span{
+   margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .container-page .header .logo img {
+        width: 250px;
+    }
+    .container-page .content-lead .cta-lead {
+        flex-direction: column;
+        width: 90%;
+    }
+    .cta-lead .img-cta img,
+    .cta-lead .img-cta {
+        width: 100%;
+    }
+    .cta-lead .form-lead {
+        width: 100%;
+    }
+    .container-page .cta-lead .bolsa-info{
+        width: 100%;
+        margin-top: 50px;
+
+    }
+    .container-page .cta-lead .bolsa-info .bolsa_percent .bolsa span:nth-child(1) {
+        font-size: 20px;
+    }
+    .container-page .cta-lead .bolsa-info .bolsa_percent .percent span {
+        font-size: 50px;
+    }
+    .container-page .como_funciona .passos{
+        flex-direction: column;
+    }
+    .container-page .faculdades .faculdades-list {
+        justify-content: center;
+    }
+    .container-page .cursos .cursos-list {
+        justify-content: center;
+    }
+    .cta-lead .form-lead{
+        padding: 40px;
+    }
+
+    .container-page .inst_about .banner_inst{
+        flex-direction: column;
+    }
+    .container-page .inst_about .about_content .video_inst iframe{
+        width: 90%;
+    }
+    .container-page .inst_about .about_content{
+        flex-direction: column;
+    }
+    .container-page .inst_about .about_content .content{
+        width: 100%;
+    }
+    .container-page .inst_about .about_content .site{
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .container-page .inst_about .banner_inst .section-inst{
+        width: 100%;
+    }
+    .container-page .inst_about .banner_inst .section-inst .cta{
+        width: 100%;
+    }
+    .container-page .inst_about .banner_inst .inst_info .bolsa span{
+        font-size: 20px;
+    }
+    .container-page .search_inst_bolsas{
+        flex-direction: column;
+    }
+    .container-page .search_inst_bolsas .inst_info{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .container-page .pagination .page-link {
+        padding: 5px 10px;
+    }
+    .container-page footer .ft-legal-list li {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 1024px) {}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
+    left: 18px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+
+/* footer */
+
+
+/* Generic styling */
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer {
+    background-color: #272F2B;
+    color: #bbb;
+    line-height: 1.5;
+    width: 100%;
+    margin-top: 100px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+
+footer .ft-main .ft-main-item .ft-title {
+    color: #fff;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+
+
+/* Sticks footer to bottom */
+
+
+/* Footer main */
+
+footer .ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 29.8125rem
+/* 477px */
+
+) {
+    footer .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (min-width: 77.5rem
+/* 1240px */
+
+) {
+    footer .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+footer .ft-main .ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+}
+
+
+/* Footer main | Newsletter form */
+
+footer form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+    border-radius: 3px 0px 0px 3px;
+}
+
+footer input[type="submit"] {
+    background-color: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+    border-radius: 0px 3px 3px 0px;
+}
+
+
+/* Footer social */
+
+footer .ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+
+footer .ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+}
+
+footer .ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+
+
+/* Footer legal */
+
+footer .ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+}
+
+footer .ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+
+
+/* one before the last child */
+
+footer .ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+#cookieAcceptBar.cookieAcceptBar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgb(245, 242, 242);
+    color: rgb(51, 49, 49);
+    padding: 20px 0;
+    z-index: 99999;
+    text-align: justify;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+#cookieAcceptBar.cookieAcceptBar a {
+    text-decoration: underline;
+}
+
+#cookieAcceptBar button {
+    cursor: pointer;
+    border: none;
+    background-color: rgb(80 121 89);
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 3px;
+}
+
+#cookieAcceptBar #cookieAcceptBarRecuse {
+    background-color: #f4ac6d;
+}
+
+.pagination {
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+.pagination .page-link {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: var(--color-primary);
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}

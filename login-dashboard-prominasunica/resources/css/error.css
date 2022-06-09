@@ -1,0 +1,24 @@
+/*ERROS*/
+.main-error{
+    width: 400px;
+    border: 2px solid #C0C0C0;
+    border-radius: 8px;
+    margin:80px auto;
+    padding: 30px 30px 10px 30px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.main-error .footer-error{
+    margin: 0 auto;
+    width: 174px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 0px;
+    padding: 15px 20px 0px 20px;
+    margin-top: 20px;
+}
+
+.logo-error{
+    width: 134px;
+    height: 60px;
+}

@@ -1,0 +1,126 @@
+* {
+    background:transparent !important;
+    color:#000 !important;
+    text-shadow:none !important;
+    filter:none !important;
+    -ms-filter:none !important;
+}
+
+body {
+    margin:0;
+    padding:0;
+    line-height: 1.4em;
+}
+
+.alert-tr{
+    background:rgb(231, 76, 60) !important;
+    color:#FFF !important;
+}
+
+.main-content{
+    border: 0px;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #000 !important;
+}
+
+.table>tbody>tr.danger>td{
+    background-color: #f2dede !important;
+}
+
+@page {
+    margin: 0.5cm;
+}
+
+nav, footer, video, audio, object, embed { 
+    display:none; 
+}
+
+.print {
+    display:block;
+}
+
+.no-print { 
+    display:none; 
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrap { 
+    width: 100%; 
+    margin: 0; 
+    float: none !important; 
+}
+
+body {
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: #000;
+}
+
+h1 {
+    font-size: 24pt;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+h3 {
+    font-size: 14pt;
+}
+
+h4 {
+    font-size: 12pt;
+}
+
+h5 {
+    font-size: 8pt;
+}
+
+h6 {
+    font-size: 6pt;
+}
+
+q:after {
+    content: " (" attr(cite) ")";
+}
+
+a, a:visited {
+    text-decoration: underline;
+}
+
+a:link:after, a:visited:after {
+    content: " (" attr(href) ") ";
+}
+
+a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+    content: ""; 
+}
+
+p a {
+    word-wrap: break-word;
+}
+
+p {
+    widows: 10;
+}
+
+p {
+    orphans: 10;
+}
+
+.page-break { 
+    page-break-before: always; 
+}
+
+.print-inline-block {
+    display: inline-block !important;
+}
+
+.relatorio-individual-content{
+    width: 96% !important;
+}
